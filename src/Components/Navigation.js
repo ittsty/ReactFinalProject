@@ -37,9 +37,9 @@ const NavigationStyled = styled.nav`
         width: 100%;
         border-bottom: 1px solid var(--border-color);
         text-align: center;
-        padding: 2rem;
+        padding: 1.5rem;
         img{
-            width: 80%;
+            width: 100%;
             border-radius: 50%;
             border: 8px solid var(--border-color);
 

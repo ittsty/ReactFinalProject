@@ -22,7 +22,7 @@ const TitleStyled = styled.div`
             content: "";
             position: absolute;
             bottom: 0;
-            width: 7.4rem;
+            width: 3.5rem;
             height: .33rem;
             background-color: var(--background-light-color-2);
             border-radius: 15px;
@@ -41,7 +41,7 @@ const TitleStyled = styled.div`
         span{
             font-weight: 900;
             color: rgba(25,29,43,.44);
-            font-size: 5rem;
+            font-size: 3.75rem;
             position: absolute;
             left: 0;
             top: 30%;
