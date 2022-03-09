@@ -1,25 +1,66 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from "./Components/Sidebar";
+import styled from "styled-components"
+import {BrowserRouter as Router, Switch as Switching,Route} from "react-router-dom";
+import Switch from '@material-ui/core/Switch';
+import Brightness4Icon  from "@material-ui/icons/Brightness4";
+import { IconButton } from '@material-ui/core/';
+import { useState,useEffect} from "react";
+import HomePage from "./Pages/HomePage";
+import AboutPage from "./Pages/AboutPage";
 
 function App() {
+
+  const [theme, setTheme] = useState('dark-theme')
+  const [checked, setChecked] = useState(false)
+
+  useEffect(() => {
+    document.documentElement.className = theme
+  },[theme])
+
+  const themeToggler = () => {
+    if(theme === 'light-theme'){
+      setTheme('dark-theme')
+      setChecked(false)
+    } else{
+      setTheme('light-theme')
+      setChecked(true)
+    }
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Sidebar/>
+      <MainContentStyle className="main-content">
+
+          <div className="light-dark-mode">
+              <div className="left-content">
+                <Brightness4Icon/>
+              </div>
+              <div className="left-content">
+                <Switch 
+                value=""
+                checked={checked}
+                inputProps={{'arial-label':''}}
+                size="medium"
+                onClick={themeToggler}
+                />
+              </div>
+          </div>
+
+          <Switching>
+            <Route path='/' exact><HomePage/></Route>
+            <Route path='/about'><AboutPage/></Route>
+          </Switching>  
+      </MainContentStyle>
     </div>
   );
 }
+
+const MainContentStyle = styled.main`
+  position: relative ;
+  margin-left: 16.3rem ;
+  min-height: 100vh ;
+  
+`
 
 export default App;
