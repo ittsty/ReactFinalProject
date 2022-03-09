@@ -14,8 +14,8 @@ const HomePage = () => {
           when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
         <div className='icons'>
           <div className='icon i-facebook'><Facebook/></div>
-          <div className='icon i-facebook'><GitHub/></div>
-          <div className='icon i-facebook'><YouTube/></div>
+          <div className='icon i-github'><GitHub/></div>
+          <div className='icon i-youtube'><YouTube/></div>
         </div>
       </div>
     </HomePageStyled>
