@@ -3,7 +3,6 @@ import styled from "styled-components"
 import {BrowserRouter as Router, Switch as Switching,Route} from "react-router-dom";
 import Switch from '@material-ui/core/Switch';
 import Brightness4Icon  from "@material-ui/icons/Brightness4";
-import { IconButton } from '@material-ui/core/';
 import { useState,useEffect} from "react";
 import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";

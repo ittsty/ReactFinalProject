@@ -22,7 +22,7 @@ const TitleStyled = styled.div`
             content: "";
             position: absolute;
             bottom: 0;
-            width: 3.5rem;
+            width: 7.4rem;
             height: .33rem;
             background-color: var(--background-light-color-2);
             border-radius: 15px;
