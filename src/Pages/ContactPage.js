@@ -23,9 +23,9 @@ const ContactPage = () => {
               </div>  
             </div>
         <div className='icons'>
-          <a href='https://web.facebook.com/patchara.poonsawat/' className='icon i-facebook'><BsFacebook size='60%'/></a>
-          <a href='https://twitter.com/itsstys' className='icon i-youtube'><BsYoutube size='60%'/></a>
-          <a href='https://github.com/ittsty' className='icon i-github'><BsGithub size='60%'/></a>
+          <a href='https://web.facebook.com/patchara.poonsawat/' className='icon i-facebook'><BsFacebook size='50%'/></a>
+          <a href='https://twitter.com/itsstys' className='icon i-youtube'><BsYoutube size='50%'/></a>
+          <a href='https://github.com/ittsty' className='icon i-github'><BsGithub size='50%'/></a>
         </div>
       </InnerLayout>
       </ContactStyle>

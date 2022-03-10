@@ -1,5 +1,6 @@
 import {createGlobalStyle} from 'styled-components'
 
+
 const GlobalStyle = createGlobalStyle`
 .light-theme{
     --primary-color: #007bff;

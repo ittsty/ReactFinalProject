@@ -2,19 +2,25 @@ import React from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 import avatar from '../img/avatar.jpg'
+import {useSelector,useDispatch} from 'react-redux'
 
 const Navigation = () => {
+    const dispatch = useDispatch()
+    const item = useSelector((state) => state.cartReducer.item)
   return (
     <NavigationStyled>
+
         <div className='avatar'>
             <img src={avatar} alt=''></img>
         </div>
         <ul className='nav-items'>
-            <li className='nav-item'><NavLink to="/" activeClassName='active' exact>Home</NavLink> </li>
-            <li className='nav-item'><NavLink to="/About" activeClassName='active' >About</NavLink> </li>
-            <li className='nav-item'><NavLink to="/Resume" activeClassName='active' >Resume</NavLink> </li>
-            <li className='nav-item'><NavLink to="/Portfolio" activeClassName='active' >Portfolio</NavLink> </li>
-            <li className='nav-item'><NavLink to="/Contact" activeClassName='active' >Contact</NavLink> </li>
+            <li className='nav-items'><NavLink to="/" activeClassName='active' exact>Home</NavLink> </li>
+            <li className='nav-items'><NavLink to="/About" activeClassName='active' >About</NavLink> </li>
+            <li className='nav-items'><NavLink to="/Resume" activeClassName='active' >Resume</NavLink> </li>
+            <li className='nav-items'><NavLink to="/Portfolio" activeClassName='active' >Portfolio</NavLink> </li>
+            <li className='nav-items'><NavLink to="/Product" activeClassName='active' >Product</NavLink> </li>
+            <li className='nav-items'><NavLink to="/Cart" activeClassName='active' >Cart {item} item(s)</NavLink> </li>
+            <li className='nav-items'><NavLink to="/Contact" activeClassName='active' >Contact</NavLink> </li>
         </ul>
         <footer className='footer'>
             <p>@2022 Patchara Poonsawat</p>
