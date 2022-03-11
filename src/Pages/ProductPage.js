@@ -67,8 +67,7 @@ const ProductPage = () => {
         <ProductStyled>
           <InnerLayout>
             <Title title={"Product Page"} span={"Product Page"} />
-
-                <div className="tablee">
+                <div className="table">
                   <Table striped bordered hover>
                     <thead>
                       <tr>
@@ -130,6 +129,10 @@ const ProductStyled = styled.div`
     th, td {
         padding: 10px;
         border-color: var(--border-color);
+    }
+    .table{
+    margin-top: 1rem;
+    width: 98%;
   }
 `
 export default ProductPage

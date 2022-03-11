@@ -14,7 +14,7 @@ const CartPage = () => {
         <InnerLayout>
           <Title title={"Product Page"} span={"Product Page"} />
           <div className="container">
-            <div className="row">
+            <div className="table">
               <div className="col-md-12 mt-4">
                 <Table striped bordered hover>
                   <thead>
@@ -69,6 +69,10 @@ const CartStyled = styled.div`
   td {
     padding: 10px;
     border-color: var(--border-color);
+  }
+  .table{
+    margin-top: 1rem;
+    width: 98%;
   }
 `;
 export default CartPage;
