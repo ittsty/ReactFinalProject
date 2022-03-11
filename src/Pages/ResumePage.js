@@ -49,6 +49,7 @@ const ResumePage = () => {
         <MainRoleStyle>
           <Title title={"My MainRole"} span={"My MainRole"} />
           <InnerLayout>
+          <div class="animate__animated animate__fadeIn animate__delay-1s">
             <div className="row">
               <div className="column">
                 <FaGamepad size={60} />
@@ -63,12 +64,14 @@ const ResumePage = () => {
                 <h3>Video Editor</h3>
               </div>
             </div>
+            </div>
           </InnerLayout>
         </MainRoleStyle>
 
         <ResumeStyled>
           <Title title={"Personal"} span={"Personal"} />
           <InnerLayout>
+          <div class="animate__animated animate__fadeIn animate__delay-2s">
             <div className="small-title u-small-title">
               <SmallTitle icon={school} title={"Educational Qualifications"} />
             </div>
@@ -89,6 +92,7 @@ const ResumePage = () => {
                 title={"Bodindecha (Sing Singhaseni)2 School"}
                 subTitle={"Middle School"}
               />
+            </div>
             </div>
           </InnerLayout>
         </ResumeStyled>

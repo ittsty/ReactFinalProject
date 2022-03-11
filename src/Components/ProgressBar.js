@@ -35,7 +35,14 @@ const ProgressBarStyled = styled.div`
                 height: 100%;
                 background-color: var(--primary-color);
                 border-radius: inherit;
+                animation-name: animationProgress;
+                animation-duration: 1s;
             }
+        }
+    }
+    @keyframes animationProgress{
+        from{
+            width: 0;
         }
     }
 `;

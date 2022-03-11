@@ -1,24 +1,34 @@
-import React from 'react'
-import styled from "styled-components"
-import Facebook from '@material-ui/icons/Facebook'
-import GitHub from '@material-ui/icons/GitHub'
-import YouTube from '@material-ui/icons/YouTube'
+import React from "react";
+import styled from "styled-components";
+import Facebook from "@material-ui/icons/Facebook";
+import GitHub from "@material-ui/icons/GitHub";
 
 const HomePage = () => {
   return (
     <HomePageStyled>
-      <div className='typography'>
-        <h1>Hi I'm <span>Patchara Poonsawat</span></h1>
-        <p>WORK PLAY & LELAX</p>
-        <div className='icons'>
-          <div className='icon i-facebook'><Facebook/></div>
-          <div className='icon i-github'><GitHub/></div>
-          <div className='icon i-youtube'><YouTube/></div>
+      <div className="typography">
+        <div class="animate__animated animate__fadeInUp animate__fast">
+          <h1>
+            Hi I'm <span>Patchara Poonsawat</span>
+          </h1>
+        </div>
+        <div class="animate__animated animate__fadeInUp animate__delay-1s">
+          <p>WORK PLAY & LELAX</p>
+        </div>
+        <div class="animate__animated animate__fadeInUp animate__delay-2s">
+          <div className="icons">
+            <a href="https://web.facebook.com/patchara.poonsawat/" className="icon i-facebook">
+              <Facebook />
+            </a>
+            <a href="https://github.com/ittsty" className="icon i-github">
+              <GitHub />
+            </a>
+          </div>
         </div>
       </div>
     </HomePageStyled>
-  )
-}
+  );
+};
 
 const HomePageStyled = styled.header`
   width: 100%;
@@ -56,13 +66,6 @@ const HomePageStyled = styled.header`
           margin: 0.5rem;
         }
       }
-
-      .i-youtube {
-        &:hover {
-          border: 2px solid red;
-          color: red;
-        }
-      }
       .i-github {
         &:hover {
           border: 2px solid #5f4687;
@@ -73,4 +76,4 @@ const HomePageStyled = styled.header`
   }
 `;
 
-export default HomePage
+export default HomePage;

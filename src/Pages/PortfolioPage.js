@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Title from "../Components/Title";
 import { MainLayout, InnerLayout } from "../styles/Layout";
 import PortItem from "../Components/PortItem";
-import { BsGithub,BsYoutube} from 'react-icons/bs';
+import { BsGithub,BsYoutube,BsGlobe} from 'react-icons/bs';
 
 const PortfolioPage = () => {
   return (
@@ -11,6 +11,25 @@ const PortfolioPage = () => {
       <ProtStyle>
         <InnerLayout>
           <Title title={"Portfolio"} span={"Portfolio"} />
+          <PortItem
+            iframe={
+              <iframe
+                width="480"
+                height="269"
+                src="https://www.youtube.com/embed/BHi708tgSwY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            }
+            Title={"GGJ2022 || Duìmiàn de"}
+            P={'Position : Programer'}
+            Desc={'Global Game Jam 2020 at DPU Jamsite using Unity my main role is Programer and take some path in game designer'}
+            link={'https://globalgamejam.org/2022/games/%E5%AF%B9%E9%9D%A2%E7%9A%84-du%C3%ACmi%C3%A0n-de-7'}
+            c={'icon i-web'}
+            icon={<BsGlobe size='40'/>}
+          />
           <PortItem
             iframe={
               <iframe

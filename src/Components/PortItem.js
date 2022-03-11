@@ -1,26 +1,26 @@
 import React from "react";
 import styled from "styled-components";
-import { BsFacebook,BsGithub,BsYoutube} from 'react-icons/bs';
 
-
-function PortItem({iframe,Title,P,Desc,link,c,icon}){
+function PortItem({ iframe, Title, P, Desc, link, c, icon }) {
   return (
-      <ProtStyle>
-          <div className="row">
-            <div className="Left-content">
-                {iframe}
-            </div>
-            <div className="Right-content">
-              <h1>{Title}</h1>
-              <h2>{P}</h2>
-              <p>{Desc}</p>
-              <div className="link">
-              <a href={link} className={c}>{icon}</a>
-              </div>
+    <ProtStyle>
+      <div class="animate__animated animate__slideInRight">
+        <div className="row">
+          <div className="Left-content">{iframe}</div>
+          <div className="Right-content">
+            <h1>{Title}</h1>
+            <h2>{P}</h2>
+            <p>{Desc}</p>
+            <div className="link">
+              <a href={link} className={c}>
+                {icon}
+              </a>
             </div>
           </div>
-      </ProtStyle>
-  )
+        </div>
+      </div>
+    </ProtStyle>
+  );
 }
 
 const ProtStyle = styled.div`
@@ -51,26 +51,31 @@ const ProtStyle = styled.div`
         justify-content: center;
         margin-top: 1rem;
         .icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        transition: all 0.4s ease-in-out;
-        cursor: pointer;
-        &:hover {
-          color: var(--primary-color);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          transition: all 0.4s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            color: var(--primary-color);
+          }
         }
-      }
-      .i-youtube {
-        &:hover {
-          color: red;
+        .i-youtube {
+          &:hover {
+            color: red;
+          }
         }
-      }
-      .i-github {
-        &:hover {
-          color: #5f4687;
+        .i-github {
+          &:hover {
+            color: #5f4687;
+          }
         }
-      }
+        .i-web {
+          &:hover {
+            color: #33B3FF;
+          }
+        }
       }
     }
   }
@@ -81,4 +86,4 @@ const ProtStyle = styled.div`
     margin-top: 1.5rem;
   }
 `;
-export default PortItem
+export default PortItem;

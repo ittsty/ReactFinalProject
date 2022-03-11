@@ -4,7 +4,9 @@ import styled from 'styled-components'
 function Title({title,span}){
     return(
         <TitleStyled>
+            <div class="animate__animated animate__fadeInDown">
             <h2>{title} <b><span>{span}</span></b></h2>
+            </div>
         </TitleStyled>
     )
 }

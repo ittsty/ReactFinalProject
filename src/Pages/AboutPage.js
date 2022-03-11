@@ -5,13 +5,13 @@ import { BsFillDice6Fill, BsFillBrushFill } from "react-icons/bs";
 import { GiGamepad } from "react-icons/gi";
 import styled from "styled-components";
 import About from "../img/About.png";
-
 const AboutPage = () => {
   return (
     <MainLayout>
       <AboutStyle>
         <InnerLayout>
           <Title title={"About me"} span={"About me"} />
+          <div class="animate__animated animate__fadeIn">
           <div className="row">
             <div className="Left">
               <img src={About} alt=""></img>
@@ -34,26 +34,29 @@ const AboutPage = () => {
               </p>
             </div>
           </div>
+          </div>
           <AboutFreeTimeStyle>
-            <InnerLayout>
-              <div>
-                <Title title={"My Hobby"} span={"My Hobby"} />
-                <div className="row">
-                  <div className="column">
-                    <BsFillDice6Fill size={60} />
-                    <h3>BoardGame</h3>
-                  </div>
-                  <div className="column">
-                    <GiGamepad size={65} />
-                    <h3>Play Games</h3>
-                  </div>
-                  <div className="column">
-                    <BsFillBrushFill size={60} />
-                    <h3>Drawing</h3>
+            <Title title={"My Hobby"} span={"My Hobby"} />
+            <div class="animate__animated animate__fadeInUp animate__fast">
+              <InnerLayout>
+                <div>
+                  <div className="row">
+                    <div className="column">
+                      <BsFillDice6Fill size={60} />
+                      <h3>BoardGame</h3>
+                    </div>
+                    <div className="column">
+                      <GiGamepad size={65} />
+                      <h3>Play Games</h3>
+                    </div>
+                    <div className="column">
+                      <BsFillBrushFill size={60} />
+                      <h3>Drawing</h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </InnerLayout>
+              </InnerLayout>
+            </div>
           </AboutFreeTimeStyle>
         </InnerLayout>
       </AboutStyle>
@@ -101,10 +104,11 @@ const AboutStyle = styled.section`
   }
 `;
 const AboutFreeTimeStyle = styled.section`
+  margin-top: 2.5rem;
   .row {
     height: 8rem;
     padding: 0.5rem;
-    margin-top: 3rem;
+    margin-top: 0.25rem;
   }
   .column {
     height: 10rem;

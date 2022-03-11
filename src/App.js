@@ -10,7 +10,7 @@ import ResumePage from "./Pages/ResumePage";
 import ContactPage from "./Pages/ContactPage";
 import ProductPage from "./Pages/ProductPage";
 import CartPage from "./Pages/CartPage";
-
+import 'animate.css';
 import rootReducer from "./redux/reducers/index";
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';

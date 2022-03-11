@@ -9,34 +9,38 @@ const ContactPage = () => {
     <MainLayout>
       <ContactStyle>
         <InnerLayout>
-          <Title title={"Contact"} span={"Contact"} />
-          <div className="row">
-            <div className="column">
-              <h5>Patchara Poonsawat</h5>
-            </div>
-            <div className="column">
-              <h5>itsty#8570</h5>
-            </div>
-            <div className="column">
-              <h5>ittsty</h5>
-            </div>
+          <div class="animate__animated animate__fadeInDown">
+            <Title title={"Contact"} span={"Contact"} />
           </div>
-          <div className="icons">
-            <a
-              href="https://web.facebook.com/patchara.poonsawat/"
-              className="icon i-facebook"
-            >
-              <BsFacebook size="50%" />
-            </a>
-            <a
-              href="https://discordapp.com/users/224574667589943296"
-              className="icon i-dis"
-            >
-              <BsDiscord size="50%" />
-            </a>
-            <a href="https://github.com/ittsty" className="icon i-github">
-              <BsGithub size="50%" />
-            </a>
+          <div class="animate__animated animate__fadeInDown">
+            <div className="row">
+              <div className="column">
+                <h5>Patchara Poonsawat</h5>
+              </div>
+              <div className="column">
+                <h5>itsty#8570</h5>
+              </div>
+              <div className="column">
+                <h5>ittsty</h5>
+              </div>
+            </div>
+            <div className="icons">
+              <a
+                href="https://web.facebook.com/patchara.poonsawat/"
+                className="icon i-facebook"
+              >
+                <BsFacebook size="50%" />
+              </a>
+              <a
+                href="https://discordapp.com/users/224574667589943296"
+                className="icon i-dis"
+              >
+                <BsDiscord size="50%" />
+              </a>
+              <a href="https://github.com/ittsty" className="icon i-github">
+                <BsGithub size="50%" />
+              </a>
+            </div>
           </div>
         </InnerLayout>
       </ContactStyle>

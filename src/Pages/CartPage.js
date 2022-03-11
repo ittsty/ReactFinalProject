@@ -12,7 +12,7 @@ const CartPage = () => {
     <MainLayout>
       <CartStyled>
         <InnerLayout>
-          <Title title={"Product Page"} span={"Product Page"} />
+          <Title title={"Cart"} span={"Cart"} />
           <div className="container">
             <div className="table">
               <div className="col-md-12 mt-4">
